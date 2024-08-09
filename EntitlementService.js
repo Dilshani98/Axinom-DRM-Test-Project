@@ -106,7 +106,7 @@
 					let inlineKey = {
 						"id": key.keyId,
 						"usage_policy": "Policy A",
-						"encrypted_key": "id31chJLV9kmQPHw1GSveg=="
+						"encrypted_key": key.encrypted_key ? key.encrypted_key : ""
 					};
 
 					message.content_keys_source.inline.push(inlineKey);
