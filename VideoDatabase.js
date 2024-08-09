@@ -59,7 +59,22 @@
             ]
         },
         {
-            "name": "My video 2",
+            "name": "My video 2 - test with KeyIds",
+            "url": "https://ed57d7c184e185ae4e90c406.blob.core.windows.net/video-output/PVUQNzpbUxL95ycZx3GSKM/dash/manifest.mpd",
+            "keys": [
+                {
+                    "keyId": "d78cdf23-5b5a-4252-a2fc-00777f62f638"
+                },
+                {
+                    "keyId": "013186b2-5ce0-46bb-b73c-01a75123292f"
+                }, 
+                {
+                    "keyId": "92d16252-6cf0-4c6f-ae80-b09a274fda24"
+                } 
+            ]
+        },
+        {
+            "name": "My video 2", // with license token
             "url": "https://ed57d7c184e185ae4e90c406.blob.core.windows.net/video-output/PVUQNzpbUxL95ycZx3GSKM/dash/manifest.mpd",
             "licenseToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjogMSwiY29tX2tleV9pZCI6ICJjZDk5ODBlYy1hNDVhLTQ1NmEtODM1Yy1iMWM1MDA1ZmIyYzIiLCJtZXNzYWdlIjogeyAgInR5cGUiOiAiZW50aXRsZW1lbnRfbWVzc2FnZSIsICAidmVyc2lvbiI6IDIsICAiY29udGVudF9rZXlzX3NvdXJjZSI6IHsgICAgImlubGluZSI6IFsgICAgICB7ICAgICAgICAiaWQiOiAiZDc4Y2RmMjMtNWI1YS00MjUyLWEyZmMtMDA3NzdmNjJmNjM4IiAgICAgIH0sICAgICAgeyAgICAgICAgImlkIjogIjAxMzE4NmIyLTVjZTAtNDZiYi1iNzNjLTAxYTc1MTIzMjkyZiIgICAgICB9LCAgICAgIHsgICAgICAgICJpZCI6ICI5MmQxNjI1Mi02Y2YwLTRjNmYtYWU4MC1iMDlhMjc0ZmRhMjQiICAgICAgfSAgICBdICB9fX0._PMcaXkd1jFXY3cHIvkttIKhZvsC8EMgNfz1bN76EIY"
         }

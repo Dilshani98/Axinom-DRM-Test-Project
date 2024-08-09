@@ -99,18 +99,32 @@
 
 				// Now we embed the content key information (IDs and usage policies) into the license token.
 				// For more information on this topic, refer to Axinom DRM documentation.
-
-				video.keys.forEach(function (key) {
-					// A key ID is always required. In this demo, we'll also reference the previously defined
-					// key usage policy.
-					let inlineKey = {
-						"id": key.keyId,
-						"usage_policy": "Policy A",
-						"encrypted_key": key.encrypted_key ? key.encrypted_key : ""
-					};
-
-					message.content_keys_source.inline.push(inlineKey);
-				});
+				if (video.keys.length > 1) {
+					video.keys.forEach(function (key) {
+						// A key ID is always required. In this demo, we'll also reference the previously defined
+						// key usage policy.
+						
+						let inlineKey = {
+							"id": key.keyId
+						};
+	
+						message.content_keys_source.inline.push(inlineKey);
+					});
+				} else {
+					video.keys.forEach(function (key) {
+						// A key ID is always required. In this demo, we'll also reference the previously defined
+						// key usage policy.
+						
+						let inlineKey = {
+							"id": key.keyId,
+							"usage_policy": "Policy A",
+							"encrypted_key": key.encrypted_key ? key.encrypted_key : ""
+						};
+	
+						message.content_keys_source.inline.push(inlineKey);
+					});
+				}
+				
 
 				// For detailed information about these fields, refer to Axinom DRM documentation.
 				let envelope = {
